@@ -29,36 +29,48 @@ dependencies:
   version: 4.3.30
   cf_stacks:
   - cflinuxfs2
+  - opensuse42
+  - sle12
   uri: http://repo.continuum.io/miniconda/Miniconda2-4.3.30-Linux-x86_64.sh
   sha256: '0891000ca28359e63aa77e613c01f7a88855dedfc0ddc8be31829f3139318cf3'
 - name: miniconda3
   version: 4.3.30
   cf_stacks:
   - cflinuxfs2
+  - opensuse42
+  - sle12
   uri: http://repo.continuum.io/miniconda/Miniconda3-4.3.30-Linux-x86_64.sh
   sha256: 66c822dfe76636b4cc2ae5604816e0e723aa01620f50087f06410ecf5bfdf38c
 - name: pip
   version: 9.0.1
   cf_stacks:
   - cflinuxfs2
+  - opensuse42
+  - sle12
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/pip/pip-9.0.1-35f01da3.tar.gz
   sha256: '09f243e1a7b461f654c26a725fa373211bb7ff17a9300058b205c61658ca940d'
 - name: pip-pop
   version: 0.1.1
   cf_stacks:
   - cflinuxfs2
+  - opensuse42
+  - sle12
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/pip-pop/pip-pop-0.1.1-d410583a.tar.gz
   sha256: c928ade1cc134d1b67851caf85a856c8fcc8fc960814385eef1fef2482991bc7
 - name: pipenv
   version: 8.3.2
   cf_stacks:
   - cflinuxfs2
+  - opensuse42
+  - sle12
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/pipenv/pipenv-8.3.2-5e84a9b0.tar.gz
   sha256: 5e84a9b0ab2cc1a44b6e196ddb19656e6b5cff1e131d231e51cabf8b4129d4c6
 - name: setuptools
   version: 38.2.3
   cf_stacks:
   - cflinuxfs2
+  - opensuse42
+  - sle12
   uri: https://buildpacks.cloudfoundry.org/dependencies/setuptools/setuptools-38.2.3-63c39408.zip
   sha256: 63c394084de7d11bbbec59a4f9a9a6bab10209657c615e76ef62ae25cea39288
 - name: libmemcache
@@ -133,6 +145,168 @@ dependencies:
   - cflinuxfs2
   uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.3-linux-x64-e4f7e1ff.tgz
   sha256: d6049c21009f0025ce89fdabbbb5a6fd0f6c955ca9af4871c1b979be88a9bb4c
+- name: python
+  version: 3.6.1
+  cf_stacks:
+  - cflinuxfs2
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.1-linux-x64-d8e1dbc6.tgz
+  sha256: 8b27a022366f30d1c9c87296c435910a04967e82053c88fa81668763b08148da
+- name: python
+  version: 3.5.3
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.5.3-linux-x64-ed914f62.tgz
+  sha256: c6d87b7526f38cb2f5241ff1ef35c038394ba94afa2b87f1724ed345d00fdfed
+- name: python
+  version: 3.6.3
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.6.3-linux-x64-f8c1724b.tgz
+  sha256: cf9f03ea81c1391fd058ecd60d4f268547809ff32bcaea7130647bd7f919a754
+- name: python
+  version: 3.6.2
+  cf_stacks:
+  - opensuse42
+  sha256: ddeceb6779a6637904c918f7c61d72db4f97006e253620b26d382e3febd9a569
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.6.2-linux-x64-17119b39.tgz
+- name: python
+  version: 3.6.1
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.6.1-linux-x64-b036e6be.tgz
+  sha256: d60db38a1bc5d96a0efb0ffc1015e9aa7d91be9ed66c55a19e2a41595ec3cb3e
+- name: python
+  version: 2.7.14
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-2.7.14-linux-x64-43f1551f.tgz
+  sha256: 4644bcf0629951ff0516a6e837c0cd41340e6be04d7029ac8776ea7c55a17892
+- name: python
+  version: 3.3.7
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.3.7-linux-x64-b3050425.tgz
+  sha256: b34547cf87de56282f08342d6f035316a6a6700948c5ca9df9a9cb18ae04fc53
+- name: python
+  version: 3.3.6
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.3.6-linux-x64-786f85c3.tgz
+  sha256: c6861f45cea11acfdc18929d843160569190fca4c27c0ab110e1d7fe013a757e
+- name: python
+  version: 3.4.7
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.4.7-linux-x64-0d689816.tgz
+  sha256: 80504147f9e63405349ff73ec36e30c1e1315ee9e422e6054a600e8b8d0ebbfb
+- name: python
+  version: 3.4.6
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.4.6-linux-x64-29d8fab6.tgz
+  sha256: 606e3ccd2486b0880f9db1c4cb0a9e8e993cf9dc35ade970ca4a248280174707
+- name: python
+  version: 3.5.4
+  cf_stacks:
+  - opensuse42
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-3.5.4-linux-x64-96cce1de.tgz
+  sha256: a126649aa1c16e5a922e53d4a56350eef32f50b0635961c7f5e3745a59ecc444
+- name: python
+  version: 2.7.13
+  cf_stacks:
+  - opensuse42
+  sha256: b44ed3ab8d84e704cf7f255b27c8685e5cfda6975add7b21f05ab09424cf3481
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/python/python-2.7.13-linux-x64-5abcdaa7.tgz
+- name: libmemcache
+  version: 1.0.18
+  cf_stacks:
+  - opensuse42
+  uri: http://cf-opensusefs2.s3.amazonaws.com/manual-binaries/libmemcache-1.0.18-linux-x64-73d7c402.tgz
+  sha256: 6c653d685e6252c56cb5a49e7ef79da6a9f09bfe503f8a1686bca737c6b5c88d
+- name: libffi
+  version: 3.2.1
+  cf_stacks:
+  - opensuse42
+  uri: http://cf-opensusefs2.s3.amazonaws.com/manual-binaries/libffi-3.2.1-linux-x64-fc5e5263.tgz
+  sha256: 5bf3e8fcc832c6709a3e79d0edeb1f1ecb70cac903b82b0c636c75bc197c2139
+- name: python
+  version: 2.7.14
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-2.7.14-linux-x64-75510977.tgz
+  sha256: 1a313713c6142ed1721618ad68bd28681d97cecab30c0151fe51e9a2534ff7f1
+- name: python
+  version: 2.7.13
+  cf_stacks:
+  - sle12
+  uri: https://cf-sle12.s3.amazonaws.com/dependencies/python/python-2.7.13-linux-x64-3eedb66b.tgz
+  sha256: 19c0662de9fb1df3a7d2c9fdd0147bf287e82a9b3e6f76a5f4b1bc4104716b5c
+- name: python
+  version: 3.3.7
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-3.3.7-linux-x64-d82e9d93.tgz
+  sha256: 8561f71df084ae1c6f1e8cbf1b3d2efdc0b108c011fd7418ff3fe1d5fc8c3d4a
+- name: python
+  version: 3.3.6
+  cf_stacks:
+  - sle12
+  uri: https://cf-sle12.s3.amazonaws.com/dependencies/python/python-3.3.6-linux-x64-ba298964.tgz
+  sha256: c7ca792d8cfa83150d3d7f018236d5834584504ab9e7b2654c18ddfd486a7e8d
+- name: python
+  version: 3.4.7
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-3.4.7-linux-x64-0830d94e.tgz
+  sha256: 4d439d3b633db2e62d62fdf63b2d8677bb52dde99f2fb36ffa780a9689fb94c5
+- name: python
+  version: 3.4.6
+  cf_stacks:
+  - sle12
+  uri: https://cf-sle12.s3.amazonaws.com/dependencies/python/python-3.4.6-linux-x64-63975433.tgz
+  sha256: d3d04ca6b0a099b6fabf641f87c8da5e5a7bfb1a0283ee5c32ab5fe6f6934a07
+- name: python
+  version: 3.5.4
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-3.5.4-linux-x64-a3a9df3d.tgz
+  sha256: 9076a6805f1bbfbbff416df626bfda9db7c3cd8b00706db81a30e6beba4e430d
+- name: python
+  version: 3.5.3
+  cf_stacks:
+  - sle12
+  uri: https://cf-sle12.s3.amazonaws.com/dependencies/python/python-3.5.3-linux-x64-3b2a6b2e.tgz
+  sha256: 148b6b8789729aa5c96400e70f8d87351f2d79952896cba6988c43a754cf626e
+- name: python
+  version: 3.6.3
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-3.6.3-linux-x64-1015c98c.tgz
+  sha256: 6f8a7e8373b613dee35994e283631a5f6d7e0cc8b573324228b53f068f7bdd9b
+- name: python
+  version: 3.6.2
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-3.6.2-linux-x64-9d576073.tgz
+  sha256: d0b288f6827989d0ff361c5689bbdaeb76fb04016a45e39234528e73f8e4436d
+- name: python
+  version: 3.6.2
+  cf_stacks:
+  - sle12
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/python/python-3.6.2-linux-x64-9d576073.tgz
+  sha256: d0b288f6827989d0ff361c5689bbdaeb76fb04016a45e39234528e73f8e4436d
+- name: libmemcache
+  version: 1.0.18
+  cf_stacks:
+  - sle12
+  uri: http://cf-sle12.s3.amazonaws.com/manual-binaries/libmemcache-1.0.18-linux-x64-db5eed5d.tgz
+  sha256: e69707c77b73006a3683c7ed48268abc1c305e4a7f71d3f3130caac37a45d131
+- name: libffi
+  version: 3.2.1
+  cf_stacks:
+  - sle12
+  uri: http://cf-sle12.s3.amazonaws.com/manual-binaries/libffi-3.2.1-linux-x64-55493c82.tgz
+  sha256: b6e06f314ea019521829029b5533a1b28d308d1b654a2c6b22263e572aa76e25
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
