@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cloudfoundry/libbuildpack"
-	"github.com/cloudfoundry/libbuildpack/snapshot"
+	"github.com/SUSE/cf-libbuildpack/snapshot"
+	"github.com/SUSE/cf-libbuildpack"
 	"github.com/kr/text"
 )
 

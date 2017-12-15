@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/cloudfoundry/libbuildpack"
-	"github.com/cloudfoundry/libbuildpack/cutlass"
+	"github.com/SUSE/cf-libbuildpack"
+	"github.com/SUSE/cf-libbuildpack/cutlass"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

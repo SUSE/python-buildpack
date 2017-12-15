@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"python/hooks"
 
-	"github.com/cloudfoundry/libbuildpack"
-	"github.com/cloudfoundry/libbuildpack/ansicleaner"
+	"github.com/SUSE/cf-libbuildpack"
+	"github.com/SUSE/cf-libbuildpack/ansicleaner"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
