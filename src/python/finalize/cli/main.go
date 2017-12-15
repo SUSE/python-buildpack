@@ -9,7 +9,7 @@ import (
 	"python/pyfinder"
 	"time"
 
-	"github.com/cloudfoundry/libbuildpack"
+	"github.com/SUSE/cf-libbuildpack"
 )
 
 func main() {

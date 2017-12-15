@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cloudfoundry/libbuildpack"
+	"github.com/SUSE/cf-libbuildpack"
 	"github.com/kr/text"
 )
 
