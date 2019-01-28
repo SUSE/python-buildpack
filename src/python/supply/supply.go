@@ -8,11 +8,10 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"regexp"
-	"strings"
-
 	"github.com/cloudfoundry/python-buildpack/src/python/conda"
 	"github.com/cloudfoundry/python-buildpack/src/python/pipfile"
+	"regexp"
+	"strings"
 
 	"os/exec"
 
@@ -583,9 +582,6 @@ func (s *Supplier) UninstallUnusedDependencies() error {
 
 func (s *Supplier) RunPip() error {
 	s.Log.BeginStep("Running Pip Install")
-	if os.Getenv("PIP_CERT") == "" {
-		os.Setenv("PIP_CERT", "/etc/ssl/certs/ca-certificates.crt")
-	}
 
 	requirementsPath := filepath.Join(s.Stager.BuildDir(), "requirements.txt")
 	if exists, err := libbuildpack.FileExists(requirementsPath); err != nil {
