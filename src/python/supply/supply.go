@@ -439,7 +439,7 @@ func pipfileToRequirements(lockFilePath string) (string, error) {
 func (s *Supplier) HandlePylibmc() error {
 	memcachedDir := filepath.Join(s.Stager.DepDir(), "libmemcache")
 
-	err := s.Command.Execute(s.Stager.BuildDir(), ioutil.Discard, ioutil.Discard, "pip-grep", "-s", "requirements.txt", "pylibmc")
+	err := s.Command.Execute(s.Stager.BuildDir(), indentWriter(os.Stdout), indentWriter(os.Stderr), "pip-grep", "-s", "requirements.txt", "pylibmc")
 	if err != nil {
 		return err
 	}
