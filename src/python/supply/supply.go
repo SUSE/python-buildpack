@@ -439,18 +439,21 @@ func pipfileToRequirements(lockFilePath string) (string, error) {
 func (s *Supplier) HandlePylibmc() error {
 	memcachedDir := filepath.Join(s.Stager.DepDir(), "libmemcache")
 
-	if err := s.Command.Execute(s.Stager.BuildDir(), ioutil.Discard, ioutil.Discard, "pip-grep", "-s", "requirements.txt", "pylibmc"); err == nil {
-		s.Log.BeginStep("Noticed pylibmc. Bootstrapping libmemcached.")
-		if err := s.Installer.InstallOnlyVersion("libmemcache", memcachedDir); err != nil {
-			return err
-		}
-		os.Setenv("LIBMEMCACHED", memcachedDir)
-		s.Stager.WriteEnvFile("LIBMEMCACHED", memcachedDir)
-		s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "lib"), "lib")
-		s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "lib", "sasl2"), "lib")
-		s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "lib", "pkgconfig"), "pkgconfig")
-		s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "include"), "include")
+	err := s.Command.Execute(s.Stager.BuildDir(), ioutil.Discard, ioutil.Discard, "pip-grep", "-s", "requirements.txt", "pylibmc")
+	if err != nil {
+		return err
 	}
+
+	s.Log.BeginStep("Noticed pylibmc. Bootstrapping libmemcached.")
+	if err := s.Installer.InstallOnlyVersion("libmemcache", memcachedDir); err != nil {
+		return err
+	}
+	os.Setenv("LIBMEMCACHED", memcachedDir)
+	s.Stager.WriteEnvFile("LIBMEMCACHED", memcachedDir)
+	s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "lib"), "lib")
+	s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "lib", "sasl2"), "lib")
+	s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "lib", "pkgconfig"), "pkgconfig")
+	s.Stager.LinkDirectoryInDepDir(filepath.Join(memcachedDir, "include"), "include")
 
 	return nil
 }
