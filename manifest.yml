@@ -1,218 +1,486 @@
----
-language: python
 default_versions:
 - name: python
   version: 2.7.x
-dependency_deprecation_dates:
-- version_line: 2.7.x
-  name: python
-  date: 2020-01-01
-  link: https://docs.python.org/devguide/index.html#branchstatus
-- version_line: 3.4.x
-  name: python
-  date: 2019-03-16
-  link: https://docs.python.org/devguide/index.html#branchstatus
-- version_line: 3.5.x
-  name: python
-  date: 2020-09-13
-  link: https://docs.python.org/devguide/index.html#branchstatus
-- version_line: 3.6.x
-  name: python
-  date: 2021-12-23
-  link: https://docs.python.org/devguide/index.html#branchstatus
 dependencies:
-- name: libffi
-  version: 3.2.1
-  cf_stacks:
+- cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
-  uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/python/libffi-3.2.1-linux-x64-5f5bf32c.tgz
+  name: libffi
   sha256: ff6f2f33aa3d3978a2c1764d6992ac8c384bc84a4c5d193deef891eef2555dc9
-- name: libmemcache
-  version: 1.0.18
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/python/libffi-3.2.1-linux-x64-5f5bf32c.tgz
+  version: 3.2.1
+- cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  name: libmemcache
+  sha256: 009a3476197030e30d0ce924cc044ee4851ef27324e132b29fd12d8cde071915
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/python/libmemcache-1.0.18-linux-x64-6d33aa02.tgz
-  sha256: '009a3476197030e30d0ce924cc044ee4851ef27324e132b29fd12d8cde071915'
-- name: miniconda2
-  version: 4.5.12
-  uri: https://repo.continuum.io/miniconda/Miniconda2-4.5.12-Linux-x86_64.sh
+  version: 1.0.18
+- cf_stacks:
+  - cflinuxfs2
+  - cflinuxfs3
+  - sle12
+  - opensuse42
+  - sle15
+  name: miniconda2
   sha256: bb03ebb9057b0ffcdd5b0192ef44b4c414a5cc25e05d3f319b66e44d2a3b0146
-  cf_stacks:
-  - cflinuxfs2
-  - cflinuxfs3
   source: https://github.com/conda/conda/archive/4.5.12.tar.gz
-- name: miniconda3
+  uri: https://repo.continuum.io/miniconda/Miniconda2-4.5.12-Linux-x86_64.sh
   version: 4.5.12
-  uri: https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh
+- cf_stacks:
+  - cflinuxfs2
+  - cflinuxfs3
+  - sle12
+  - opensuse42
+  - sle15
+  name: miniconda3
   sha256: e5e5b4cd2a918e0e96b395534222773f7241dc59d776db1b9f7fedfcb489157a
-  cf_stacks:
-  - cflinuxfs2
-  - cflinuxfs3
   source: https://github.com/conda/conda/archive/4.5.12.tar.gz
-- name: pip
-  version: 9.0.3
-  uri: https://buildpacks.cloudfoundry.org/dependencies/pip/pip-9.0.3-7bf48f9a.tar.gz
+  uri: https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh
+  version: 4.5.12
+- cf_stacks:
+  - cflinuxfs2
+  - cflinuxfs3
+  name: pip
   sha256: 7bf48f9a693be1d58f49f7af7e0ae9fe29fd671cde8a55e6edca3581c4ef5796
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/pip/pip-9.0.3-7bf48f9a.tar.gz
+  version: 9.0.3
+- cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
-- name: pip-pop
-  version: 0.1.3
-  cf_stacks:
-  - cflinuxfs2
-  - cflinuxfs3
-  uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/pip-pop/pip-pop-0.1.3-fc106ef6.tar.gz
+  name: pip-pop
   sha256: fc106ef6e87c9da64ca3b5eda2a4b531bdd2d1965304e9385772c546c6a6fe59
-- name: pipenv
-  version: 2018.11.26
-  uri: https://buildpacks.cloudfoundry.org/dependencies/pipenv/pipenv-v2018.11.26-cflinuxfs2-eeaa1c70.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/pip-pop/pip-pop-0.1.3-fc106ef6.tar.gz
+  version: 0.1.3
+- cf_stacks:
+  - cflinuxfs2
+  name: pipenv
   sha256: eeaa1c70e6fc736a2d2df5b385158d40c34d3f3197061ae40c412ac3fef435a4
-  cf_stacks:
-  - cflinuxfs2
   source: https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz
-- name: pipenv
+  uri: https://buildpacks.cloudfoundry.org/dependencies/pipenv/pipenv-v2018.11.26-cflinuxfs2-eeaa1c70.tgz
   version: 2018.11.26
-  uri: https://buildpacks.cloudfoundry.org/dependencies/pipenv/pipenv-v2018.11.26-cflinuxfs3-9e84619a.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: pipenv
   sha256: 9e84619a4d471ad8d67ff87431c22bce33175ef070742a34727bd7a48c0d051d
-  cf_stacks:
-  - cflinuxfs3
   source: https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz
-- name: python
-  version: 2.7.14
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.14-linux-x64-cflinuxfs2-61573fff.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/pipenv/pipenv-v2018.11.26-cflinuxfs3-9e84619a.tgz
+  version: 2018.11.26
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: 61573fffe50ebe535f53ba5c759e00962b42c0894b8ff78453bc1d9a5fc5c46e
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.14-linux-x64-cflinuxfs2-61573fff.tgz
   version: 2.7.14
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.14-linux-x64-cflinuxfs3-bd03ec4b.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: bd03ec4ba92fafbc4dcf50bed378c56e93d0d1bcf85a1f070977faf189cdc441
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
-- name: python
-  version: 2.7.15
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.15-linux-x64-cflinuxfs2-a051d3cb.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.14-linux-x64-cflinuxfs3-bd03ec4b.tgz
+  version: 2.7.14
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: a051d3cb8f89e1ac16ecec2d52cd3447b6b9e549d8f462da8629eeee14d09db0
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.15-linux-x64-cflinuxfs2-a051d3cb.tgz
   version: 2.7.15
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.15-linux-x64-cflinuxfs3-31404cdc.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: 31404cdc49dbe26754b19c01292c520ae14a1781c6e1780cb0ffe9d3e69aed77
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
-- name: python
-  version: 3.4.8
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.8-linux-x64-cflinuxfs2-5fe3e85d.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-2.7.15-linux-x64-cflinuxfs3-31404cdc.tgz
+  version: 2.7.15
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: 5fe3e85d6e9cea671019f11337929a8da21a2b0b6ea3ad180c7d9dad5f3258e1
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/3.4.8/Python-3.4.8.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.8-linux-x64-cflinuxfs2-5fe3e85d.tgz
   version: 3.4.8
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.8-linux-x64-cflinuxfs3-574d74a0.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: 574d74a0062b2ecb5a46e8a2368e1b3e000dc024a5701e87ef8fc11544234c17
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.4.8/Python-3.4.8.tgz
-- name: python
-  version: 3.4.9
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.9-linux-x64-cflinuxfs2-ab8a6375.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.8-linux-x64-cflinuxfs3-574d74a0.tgz
+  version: 3.4.8
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: ab8a6375ebfa2ea07ae9aa93d02bc757b3061cd06e9c72ff34e033221586f343
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/3.4.9/Python-3.4.9.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.9-linux-x64-cflinuxfs2-ab8a6375.tgz
   version: 3.4.9
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.9-linux-x64-cflinuxfs3-cefa2b44.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: cefa2b44d2b4ce351bc4e19769b17911cd5198729e58d48465790d677999cb21
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.4.9/Python-3.4.9.tgz
-- name: python
-  version: 3.5.5
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.5-linux-x64-cflinuxfs2-448e6d78.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.4.9-linux-x64-cflinuxfs3-cefa2b44.tgz
+  version: 3.4.9
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: 448e6d7846a7c9fee4badb9f4fd7fb2b21c9de6a141f9df4866aedd31e124adc
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/3.5.5/Python-3.5.5.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.5-linux-x64-cflinuxfs2-448e6d78.tgz
   version: 3.5.5
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.5-linux-x64-cflinuxfs3-7c210621.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: 7c210621e7420cd6f97bdabe4b8b3e14621a4d1199887d2c7e99a2926972f0a8
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.5.5/Python-3.5.5.tgz
-- name: python
-  version: 3.5.6
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.6-linux-x64-cflinuxfs2-e0bd0cbf.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.5-linux-x64-cflinuxfs3-7c210621.tgz
+  version: 3.5.5
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: e0bd0cbf5ca4e3879b6585747b83b2691e59951d058b630ead40381b47389b93
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/3.5.6/Python-3.5.6.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.6-linux-x64-cflinuxfs2-e0bd0cbf.tgz
   version: 3.5.6
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.6-linux-x64-cflinuxfs3-c9eedd80.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: c9eedd806db6ead7039cdc1e4bcada8ef295c95d329b191c03ddf3deb604df7e
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.5.6/Python-3.5.6.tgz
-- name: python
-  version: 3.6.7
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.7-linux-x64-cflinuxfs2-2ef997d1.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.5.6-linux-x64-cflinuxfs3-c9eedd80.tgz
+  version: 3.5.6
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: 2ef997d110c14e5cba3be0d229ee8caa963268027b915c3f427d1cf3dd4f5994
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.7-linux-x64-cflinuxfs2-2ef997d1.tgz
   version: 3.6.7
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.7-linux-x64-cflinuxfs3-70a1f47b.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: 70a1f47b1d7eccd0068cc1670ee3b29f92d02f847308ceb0e9027a3e4f8a7b94
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz
-- name: python
-  version: 3.6.8
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.8-linux-x64-cflinuxfs2-c8a7acb5.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.7-linux-x64-cflinuxfs3-70a1f47b.tgz
+  version: 3.6.7
+- cf_stacks:
+  - cflinuxfs2
+  name: python
   sha256: c8a7acb56fd84ad77ab273e0f68af741eae772678878aa09fbfb5af62f4d40dd
-  cf_stacks:
-  - cflinuxfs2
   source: https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
-- name: python
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.8-linux-x64-cflinuxfs2-c8a7acb5.tgz
   version: 3.6.8
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.8-linux-x64-cflinuxfs3-0e8b91a8.tgz
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: 0e8b91a865827da8da86feefc0c43ecdefe6bb0d3456acf6ef61958552540b67
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
-- name: python
-  version: 3.7.1
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.7.1-linux-x64-cflinuxfs3-edf7ca11.tgz
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.6.8-linux-x64-cflinuxfs3-0e8b91a8.tgz
+  version: 3.6.8
+- cf_stacks:
+  - cflinuxfs3
+  name: python
   sha256: edf7ca11af715a63e93ce589b5ae20a2a2c975a7d62d89ebd613f7583b56ed19
-  cf_stacks:
-  - cflinuxfs3
   source: https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz
-- name: python
-  version: 3.7.2
-  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.7.2-linux-x64-cflinuxfs3-2b800c6f.tgz
-  sha256: 2b800c6f5d6df8546225035fab66d5e84681d51d94f9b8d2ec3f020a9569ac88
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.7.1-linux-x64-cflinuxfs3-edf7ca11.tgz
+  version: 3.7.1
+- cf_stacks:
   - cflinuxfs3
+  name: python
+  sha256: 2b800c6f5d6df8546225035fab66d5e84681d51d94f9b8d2ec3f020a9569ac88
   source: https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-- name: setuptools
-  version: 40.7.1
-  uri: https://buildpacks.cloudfoundry.org/dependencies/setuptools/setuptools-40.7.1-any-stack-5926bbea.zip
-  sha256: 5926bbea397d0fcec2f7946f1691f5820ef0234247b2d5fa83d30cc216d613ec
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.7.2-linux-x64-cflinuxfs3-2b800c6f.tgz
+  version: 3.7.2
+- cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  name: setuptools
+  sha256: 5926bbea397d0fcec2f7946f1691f5820ef0234247b2d5fa83d30cc216d613ec
   source: https://files.pythonhosted.org/packages/3b/17/81a4ab4c94e9c78f98dfaad0208994129213089361dc53a7cd8de177d1e3/setuptools-40.7.1.zip
+  uri: https://buildpacks.cloudfoundry.org/dependencies/setuptools/setuptools-40.7.1-any-stack-5926bbea.zip
+  version: 40.7.1
+- cf_stacks:
+  - sle12
+  name: libffi
+  sha256: 65698120fe943870776ea64642664d805c8fb8d11ffaa15f799dc5ab355be43b
+  uri: https://cf-buildpacks.suse.com/dependencies/libffi/libffi-3.2.1-linux-x64-sle12-65698120.tgz
+  version: 3.2.1
+- cf_stacks:
+  - sle12
+  name: libmemcache
+  sha256: 90dff430cf541334d53b2ab9d4b6f88b8e10328cbf2608e25f4ee2895d7dd9ae
+  uri: https://cf-buildpacks.suse.com/dependencies/libmemcache/libmemcache-1.0.18-linux-x64-sle12-90dff430.tgz
+  version: 1.0.18
+- cf_stacks:
+  - sle12
+  name: pip
+  sha256: 7bf48f9a693be1d58f49f7af7e0ae9fe29fd671cde8a55e6edca3581c4ef5796
+  uri: https://cf-buildpacks.suse.com/dependencies/pip/pip-9.0.3-7bf48f9a.tar.gz
+  version: 9.0.3
+- cf_stacks:
+  - sle12
+  name: pip-pop
+  sha256: 8eb0ab2fdf271f70893d2f98e33fc435de87e5d003e1e72ba31c655bfc881bd7
+  uri: https://cf-buildpacks.suse.com/dependencies/pip/pip-pop-0.1.3-8eb0ab2f.tar.gz
+  version: 0.1.3
+- cf_stacks:
+  - sle12
+  name: pipenv
+  sha256: e7ae1a67a3be8bc034b72f0d44a131ae36a2ce2d7565dfa71d133301f8c4bb89
+  uri: https://cf-buildpacks.suse.com/dependencies/pipenv/pipenv-2018.11.26-linux-amd64-sle12-e7ae1a67.tgz
+  version: 2018.11.26
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: 7d286b8fda22118acaee55cbb5e271a6ba281cb9337d051f233b28532029ec92
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.14-linux-amd64-sle12-7d286b8f.tgz
+  version: 2.7.14
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: 6a48f2835fdeb9c50f63af9abbcd3b1d3cd8538bfb9026318469d628c483918e
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-amd64-sle12-6a48f283.tgz
+  version: 2.7.15
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: 4b4b352199e98f073ed3d4b0396b62e1debdeb9f8dafa853d1f308f83d4cdba2
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-amd64-sle12-4b4b3521.tgz
+  version: 3.4.8
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: 47ae77fbee56d03d8a5ecd4f9447376035c8124751f31f2e78917e7036ae3e85
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-amd64-sle12-47ae77fb.tgz
+  version: 3.4.9
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: 495b6086a518dfa6b1f28a937b5c8354fb213500fdd66f807eccb1bd126f7688
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-amd64-sle12-495b6086.tgz
+  version: 3.5.5
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: 2dd3e288be09048cf1d2bade487fa13f34a3e2b00da7cd4ce87536f727f3ca2d
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-amd64-sle12-2dd3e288.tgz
+  version: 3.5.6
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: a86c4062c311ea8a3db75cc8bccd4ae8419dc4fe5e8af120a495562c202b21d9
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-amd64-sle12-a86c4062.tgz
+  version: 3.6.7
+- cf_stacks:
+  - sle12
+  name: python
+  sha256: d03a1daa1aa8bd0aa88638f388be1c8090ae04761a94af1279113bb9824b96d4
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-amd64-sle12-d03a1daa.tgz
+  version: 3.6.8
+- cf_stacks:
+  - sle12
+  name: setuptools
+  sha256: 5926bbea397d0fcec2f7946f1691f5820ef0234247b2d5fa83d30cc216d613ec
+  uri: https://cf-buildpacks.suse.com/dependencies/setuptools/setuptools-40.7.1-5926bbea.zip
+  version: 40.7.1
+- cf_stacks:
+  - opensuse42
+  name: libffi
+  sha256: 1fa2a50f0b6037a799d491743f9844f34bb8b73f57ef4f4fe3f571966bca4cb4
+  uri: https://cf-buildpacks.suse.com/dependencies/libffi/libffi-3.2.1-linux-x64-opensuse42-1fa2a50f.tgz
+  version: 3.2.1
+- cf_stacks:
+  - opensuse42
+  name: libmemcache
+  sha256: 05f7372fd6a4cbceeb7a612302931ef8c140ac93d17cac86d61602835993ffd6
+  uri: https://cf-buildpacks.suse.com/dependencies/libmemcache/libmemcache-1.0.18-linux-x64-opensuse42-05f7372f.tgz
+  version: 1.0.18
+- cf_stacks:
+  - opensuse42
+  name: pip
+  sha256: 7bf48f9a693be1d58f49f7af7e0ae9fe29fd671cde8a55e6edca3581c4ef5796
+  uri: https://cf-buildpacks.suse.com/dependencies/pip/pip-9.0.3-7bf48f9a.tar.gz
+  version: 9.0.3
+- cf_stacks:
+  - opensuse42
+  name: pip-pop
+  sha256: 9ca871502b2817b1e121bf13abdd9448082f379c4d989e28de1d031db1d31ea0
+  uri: https://cf-buildpacks.suse.com/dependencies/pip/pip-pop-0.1.3-9ca87150.tar.gz
+  version: 0.1.3
+- cf_stacks:
+  - opensuse42
+  name: pipenv
+  sha256: 6c1c9f309b6995fa3396e5fb6774d5aea4b2eeae5f351770bd2503bf7a5f0bef
+  uri: https://cf-buildpacks.suse.com/dependencies/pipenv/pipenv-2018.11.26-linux-amd64-opensuse42-6c1c9f30.tgz
+  version: 2018.11.26
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: c4408fdb0a3410f3c0592529175e02133d0c487ffa054a562d0da7faf72fc753
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.14-linux-amd64-opensuse42-c4408fdb.tgz
+  version: 2.7.14
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: 4a8d2298d49d1c70bfc99d6fb1575957f9e15481e1431fb725f64e7d794daffe
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-amd64-opensuse42-4a8d2298.tgz
+  version: 2.7.15
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: d4be086a6276c4b9cdade301d7ffc185faf8a038857619b9b72368cba916d15b
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-amd64-opensuse42-d4be086a.tgz
+  version: 3.4.8
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: 1a72cdfe2336808b05ea637b85c770aaba17cba4b07b1daf01d601b3bc4e149c
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-amd64-opensuse42-1a72cdfe.tgz
+  version: 3.4.9
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: c2517f35394d6fb69d6cb8c6ab651b59d1c6f6424221aa854fbeb2f9452ce214
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-amd64-opensuse42-c2517f35.tgz
+  version: 3.5.5
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: 2d426bfef58233aef668809943eeb4a2686e30ab7ed0f72761d723e50f95ea05
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-amd64-opensuse42-2d426bfe.tgz
+  version: 3.5.6
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: bfe08a6eae1e0a1cdb25be28cc84d259f0bfd506c0ae617d0b5987fccb43c00a
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-amd64-opensuse42-bfe08a6e.tgz
+  version: 3.6.7
+- cf_stacks:
+  - opensuse42
+  name: python
+  sha256: 441bca408ecfd6cd8d980bdde52c24922ff3d4c5bc69a3abb1948b198b9efe56
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-amd64-opensuse42-441bca40.tgz
+  version: 3.6.8
+- cf_stacks:
+  - opensuse42
+  name: setuptools
+  sha256: 5926bbea397d0fcec2f7946f1691f5820ef0234247b2d5fa83d30cc216d613ec
+  uri: https://cf-buildpacks.suse.com/dependencies/setuptools/setuptools-40.7.1-5926bbea.zip
+  version: 40.7.1
+- cf_stacks:
+  - sle15
+  name: libffi
+  sha256: 41055ec04713c145f2e42b695b58ffa2993f7851f254a4465cd963f255b857d4
+  uri: https://cf-buildpacks.suse.com/dependencies/libffi/libffi-3.2.1-linux-x64-sle15-41055ec0.tgz
+  version: 3.2.1
+- cf_stacks:
+  - sle15
+  name: libmemcache
+  sha256: c2391f78f1a470a0dfef9ee3ab0b1b0bbf3a0a772b6837ecaae50f1d90a5a06f
+  uri: https://cf-buildpacks.suse.com/dependencies/libmemcache/libmemcache-1.0.18-linux-x64-sle15-c2391f78.tgz
+  version: 1.0.18
+- cf_stacks:
+  - sle15
+  name: pip
+  sha256: 7bf48f9a693be1d58f49f7af7e0ae9fe29fd671cde8a55e6edca3581c4ef5796
+  uri: https://cf-buildpacks.suse.com/dependencies/pip/pip-9.0.3-7bf48f9a.tar.gz
+  version: 9.0.3
+- cf_stacks:
+  - sle15
+  name: pip-pop
+  sha256: e839291470aec639507fea39ea546a5921cdd4601e87cdd60c786dcdb7631dd7
+  uri: https://cf-buildpacks.suse.com/dependencies/pip/pip-pop-0.1.3-e8392914.tar.gz
+  version: 0.1.3
+- cf_stacks:
+  - sle15
+  name: pipenv
+  sha256: 3beb66f274490ad7a2584cf7e3c0e0c3d45729ff4edb902ad2ab50b409a706cf
+  uri: https://cf-buildpacks.suse.com/dependencies/pipenv/pipenv-2018.11.26-linux-amd64-sle15-3beb66f2.tgz
+  version: 2018.11.26
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 291c49cf91b044a1c94e08ddb765798c294a180e6f7dd822312fbe1dfa30513b
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.14-linux-amd64-sle15-291c49cf.tgz
+  version: 2.7.14
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 51f5e210bf186d07cad17595e597df3112944790b16fec6764a02542e9fcf9fa
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-amd64-sle15-51f5e210.tgz
+  version: 2.7.15
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: a7a2dd7b9111c9062b1b82e12e21731abd4d80ccbab74bc14230d4211211af05
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-amd64-sle15-a7a2dd7b.tgz
+  version: 3.4.8
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: ee61eb08d0f51a54f84533af2cc10ee6ecda1cb628ecce79fcfef40ec6c078e6
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-amd64-sle15-ee61eb08.tgz
+  version: 3.4.9
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: e60894debd09c4a07c1f4d97a12d3fbd3740c128cbae6779d15bbe379c237bba
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-amd64-sle15-e60894de.tgz
+  version: 3.5.5
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 8eb54223d25969be1bdb52f816b4ea1fb2c311274403d574e92218d2326d994a
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-amd64-sle15-8eb54223.tgz
+  version: 3.5.6
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 59665dbea463e96caf4adcb5429e972e4cab7715fcc72458453ce0537e5a6566
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-amd64-sle15-59665dbe.tgz
+  version: 3.6.7
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 2d07f9c3acee416364e799e87439f4731e65189067cb7f2333867b4b0d35cd8f
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-amd64-sle15-2d07f9c3.tgz
+  version: 3.6.8
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 1657b8694c2240c84c164f3bc3ded103dd61577d5bab99e6a81f2fc978d49cb9
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.7.1-linux-amd64-sle15-1657b869.tgz
+  version: 3.7.1
+- cf_stacks:
+  - sle15
+  name: python
+  sha256: 84a328bc55bc1516026dd39ba76c0871c0c53e0e8e7597e01fa80a29c3ee4052
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.7.2-linux-amd64-sle15-84a328bc.tgz
+  version: 3.7.2
+- cf_stacks:
+  - sle15
+  name: setuptools
+  sha256: 5926bbea397d0fcec2f7946f1691f5820ef0234247b2d5fa83d30cc216d613ec
+  uri: https://cf-buildpacks.suse.com/dependencies/setuptools/setuptools-40.7.1-5926bbea.zip
+  version: 40.7.1
+dependency_deprecation_dates:
+- date: "2020-01-01"
+  link: https://docs.python.org/devguide/index.html#branchstatus
+  name: python
+  version_line: 2.7.x
+- date: "2019-03-16"
+  link: https://docs.python.org/devguide/index.html#branchstatus
+  name: python
+  version_line: 3.4.x
+- date: "2020-09-13"
+  link: https://docs.python.org/devguide/index.html#branchstatus
+  name: python
+  version_line: 3.5.x
+- date: "2021-12-23"
+  link: https://docs.python.org/devguide/index.html#branchstatus
+  name: python
+  version_line: 3.6.x
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
@@ -228,4 +496,5 @@ include_files:
 - bin/release
 - bin/supply
 - manifest.yml
+language: python
 pre_package: scripts/build.sh
