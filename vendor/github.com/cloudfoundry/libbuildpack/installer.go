@@ -217,10 +217,11 @@ func (i *Installer) fetchAppCachedBuildpackDependency(entry *ManifestEntry, outp
 	}
 
 	if foundCacheFile {
-		i.manifest.log.Info("Copy [%s]", cacheFile)
+		i.manifest.log.Info("Copy [%s] to [%s]", cacheFile, outputFile)
 		if err := CopyFile(cacheFile, outputFile); err != nil {
 			return err
 		}
+		i.manifest.log.Info("%s Copied successfully", cacheFile)
 		return deleteBadFile(entry, outputFile)
 	}
 
