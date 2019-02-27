@@ -9,3 +9,5 @@ require (
 	github.com/onsi/gomega v1.4.3
 	golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9
 )
+
+replace github.com/cloudfoundry/libbuildpack => github.com/SUSE/cf-libbuildpack v0.0.0-20190227143320-2b07160590f9
