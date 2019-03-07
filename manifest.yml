@@ -262,50 +262,50 @@ dependencies:
 - cf_stacks:
   - sle12
   name: python
-  sha256: 52216d6de13d36b7c8fb7f13f312d7b77292472510391a9b81ad48363e2d49d7
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-x64-sle12-52216d6d.tgz
+  sha256: da3636932c40894d10c454484c555f152a8477ec96d05e607e7cab059d336aef
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-x64-sle12-da363693.tgz
   version: 2.7.15
 - cf_stacks:
   - sle12
   name: python
-  sha256: 882d81db1709edc31ae740068d0091c2038448452feab2149faa1f0302d74fec
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.16-linux-x64-sle12-882d81db.tgz
+  sha256: 0878e0833e81da735be54721fc6c091818a6ba243b98d429b0fdf290685bc7f3
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.16-linux-x64-sle12-0878e083.tgz
   version: 2.7.16
 - cf_stacks:
   - sle12
   name: python
-  sha256: 40ad99a0c9c45ff5aed990f8481bfb8cbb9c6268083d937d926709d968bf5e51
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-x64-sle12-40ad99a0.tgz
+  sha256: ac48be2ec1aade4a922b1631b6540ebb7b71238f993f3edd4cf8d1131825ef65
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-x64-sle12-ac48be2e.tgz
   version: 3.4.8
 - cf_stacks:
   - sle12
   name: python
-  sha256: 821b9c16dcbf69f99565f58254b139bc8db0505edda5be496186d1d6a61e14da
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-x64-sle12-821b9c16.tgz
+  sha256: 72bef847ca17dee1c384c6031634169526b4b93ec64121ded4344e31ddee6c36
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-x64-sle12-72bef847.tgz
   version: 3.4.9
 - cf_stacks:
   - sle12
   name: python
-  sha256: cfa5462ffa2be0065feeb76b78b60c73c53b91e59ce042c92fdb856a8b9098f9
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-x64-sle12-cfa5462f.tgz
+  sha256: d0388d65c52eddbe06ce7d1be7bb6544b4f34ca6b63dbb7f7e432e89e650097b
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-x64-sle12-d0388d65.tgz
   version: 3.5.5
 - cf_stacks:
   - sle12
   name: python
-  sha256: bf038aae3cc58ad6f7de748a6dab21d172005e4e5ed91f4c9ec774b20e5c8918
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-x64-sle12-bf038aae.tgz
+  sha256: bd461fad3880bd218d502433a317e14612068815531fc26bd4cc9a9fcc81f82f
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-x64-sle12-bd461fad.tgz
   version: 3.5.6
 - cf_stacks:
   - sle12
   name: python
-  sha256: ebc15b1ebd0a9b8b34bdaba136e432b4ccec56b93ee729caaf9ed451100944d1
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-x64-sle12-ebc15b1e.tgz
+  sha256: f9dcd04d724cdc11b43082ca7bd622644d6948f1ff75805387c690aa60338688
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-x64-sle12-f9dcd04d.tgz
   version: 3.6.7
 - cf_stacks:
   - sle12
   name: python
-  sha256: 26eae4cbd122e0ef142f803ad4f6baacf4d6ebf75131c8125628a46b8ef64bca
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-x64-sle12-26eae4cb.tgz
+  sha256: 807906aa54198ad4e22462431364f3cc631249b99b8fb7f09c323c58d5c9afee
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-x64-sle12-807906aa.tgz
   version: 3.6.8
 - cf_stacks:
   - sle12
@@ -346,50 +346,50 @@ dependencies:
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: aec5024f5e16e4b74a2daad3d107704a324ef49169db23d78723b164d1c9d399
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-x64-opensuse42-aec5024f.tgz
+  sha256: 15cb0a140ca10a79fe8cd858f2b14e74dde394bf58a378d6a735b18837dfef0f
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-x64-opensuse42-15cb0a14.tgz
   version: 2.7.15
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: 0e4165fcfbbba8d1a8ff6c5671b4944e77dfe54049c5308488cf140c08ef80b7
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.16-linux-x64-opensuse42-0e4165fc.tgz
+  sha256: 8121e9805a26f6dbf451a6c94cb8145af95f6a36dcd6efafbbbe90b6e06a81ac
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.16-linux-x64-opensuse42-8121e980.tgz
   version: 2.7.16
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: 5eee6c5aa1c0dadc3a336af81a8755c15dcf7a1674a43da6fe55d16bc830db26
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-x64-opensuse42-5eee6c5a.tgz
+  sha256: 110dc61f2a08c978858209d9e0c21f469ad317fb5af0414e1344e5c892fd5e7c
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-x64-opensuse42-110dc61f.tgz
   version: 3.4.8
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: f5c63fda9a6100355396c5ae40199bc416643f41df040b01282fb5910bf9d4ba
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-x64-opensuse42-f5c63fda.tgz
+  sha256: 4d65be883bd170707c5aa7e9c1e7365d40884336bd77d09bc0bada7693328ac7
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-x64-opensuse42-4d65be88.tgz
   version: 3.4.9
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: f0cd06f60eaae455c270ea395a30ac22288dd6375969f461934bee7508cb961c
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-x64-opensuse42-f0cd06f6.tgz
+  sha256: 546e97943c685f186bd56c525e037bf68b4a97bdcbc8e38c02fe52f84cbc3ff3
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-x64-opensuse42-546e9794.tgz
   version: 3.5.5
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: 744cd5fd2f425556b774f3d6a1270db6eab4c05258a0765c8e64f03d8b55fa45
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-x64-opensuse42-744cd5fd.tgz
+  sha256: b688daeba5c4893409a5a35c3393b37cee51abcfc14a0123c8b8a7823ca26a59
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-x64-opensuse42-b688daeb.tgz
   version: 3.5.6
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: 6d1f3473d2d920f675142da4f0b4158708ef61a3530190d9a1a6a9f006ff3a0c
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-x64-opensuse42-6d1f3473.tgz
+  sha256: cc3e66a0bcca374efe10bf820151b8aca2830bb0a7f05ff211295afd08549bb1
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-x64-opensuse42-cc3e66a0.tgz
   version: 3.6.7
 - cf_stacks:
   - opensuse42
   name: python
-  sha256: 1958aaa7e5534de0603264a5aab856d4c75a482423351872e1df49eaa9c91812
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-x64-opensuse42-1958aaa7.tgz
+  sha256: 222142131274b1eecc3cabd7b35ff1c8f563729370a3f3ba29b1acf198417af8
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-x64-opensuse42-22214213.tgz
   version: 3.6.8
 - cf_stacks:
   - opensuse42
@@ -430,62 +430,62 @@ dependencies:
 - cf_stacks:
   - sle15
   name: python
-  sha256: 1bbbcb67469b211cd7cbeaa15a81b9187209c9912af36a0f724cfe7cf0221b51
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-x64-sle15-1bbbcb67.tgz
+  sha256: 45237c0a6554178329ddb10a9933687400137e5531755cd6e410015997c0a2e8
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.15-linux-x64-sle15-45237c0a.tgz
   version: 2.7.15
 - cf_stacks:
   - sle15
   name: python
-  sha256: 797d4a2b24a787233ea29efe72a2ad31decb64c1f51abfa31058c50ab7cca09f
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.16-linux-x64-sle15-797d4a2b.tgz
+  sha256: 41f555133f6f5b0b09605e202c8cea6c4dbaf4135b36e0c996a0ad2856655f6d
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-2.7.16-linux-x64-sle15-41f55513.tgz
   version: 2.7.16
 - cf_stacks:
   - sle15
   name: python
-  sha256: 7e19a6e14e8387168f23d0f350b6de87eb86a3e38362d68ccf7c66ed47627cb2
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-x64-sle15-7e19a6e1.tgz
+  sha256: 67bb492d4789691610659fafc181d5df437334af86e3bf0804d67b101e48d444
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.8-linux-x64-sle15-67bb492d.tgz
   version: 3.4.8
 - cf_stacks:
   - sle15
   name: python
-  sha256: 55eabebf0b46e671983b643d7d019b39fe1ab7c5d5b6fd129caaab23a2094ac0
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-x64-sle15-55eabebf.tgz
+  sha256: 4006aa7a7405ed982a10febffd2d313a3204c9fb5c9b1c9f43dc9d8d1d395fd7
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.4.9-linux-x64-sle15-4006aa7a.tgz
   version: 3.4.9
 - cf_stacks:
   - sle15
   name: python
-  sha256: 36573bd745e2286d88a271c1bed14e49e04f0857a7f4679d30537441b44a7f8c
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-x64-sle15-36573bd7.tgz
+  sha256: 659d6f0b9facdadd37d0e531e578af2738c24c629da61c8ebd64287dcc030225
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.5-linux-x64-sle15-659d6f0b.tgz
   version: 3.5.5
 - cf_stacks:
   - sle15
   name: python
-  sha256: 07fb18e7846f24b09f4e3d4d7480e8942356b6b43321b3e91e9e24f597e38483
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-x64-sle15-07fb18e7.tgz
+  sha256: f639e0705d6dc9a625ce119a4703ea746d3c6899b26068159895275708a1cbbd
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.5.6-linux-x64-sle15-f639e070.tgz
   version: 3.5.6
 - cf_stacks:
   - sle15
   name: python
-  sha256: ce8dfc075569a015caf7ab5ab9359b15e88a691d0cab9a641313378d56afee17
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-x64-sle15-ce8dfc07.tgz
+  sha256: 3dcc02545a4369c6cfa5be3b84b0ebdf6ebe40773aec116160a96013b80dba12
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.7-linux-x64-sle15-3dcc0254.tgz
   version: 3.6.7
 - cf_stacks:
   - sle15
   name: python
-  sha256: 72198474d276fc5ac1ec631f21469cba2c7b39a8eae272f2aae49f5add600d29
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-x64-sle15-72198474.tgz
+  sha256: 828e604530a1d4d9e5eff293388d610f2a4ad11912a37dcfb9fade7201db9784
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.6.8-linux-x64-sle15-828e6045.tgz
   version: 3.6.8
 - cf_stacks:
   - sle15
   name: python
-  sha256: 8a4fbb60dd6cd5121f64a75ed3d34c71f496a6d8356ad6a46d91143a8607f7b7
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.7.1-linux-x64-sle15-8a4fbb60.tgz
+  sha256: d2aced97deddbe8f51eecb42d84c49583f62fd18c4fe140d43207ba3dbe72183
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.7.1-linux-x64-sle15-d2aced97.tgz
   version: 3.7.1
 - cf_stacks:
   - sle15
   name: python
-  sha256: 75209287189dee69d5526d68e3612db572c38b82d5dcd84968d6e566c7ec695e
-  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.7.2-linux-x64-sle15-75209287.tgz
+  sha256: 802adf6cb0c7eef32f301835c1a386caff81e1778e9cba193f08ad1542c62042
+  uri: https://cf-buildpacks.suse.com/dependencies/python/python-3.7.2-linux-x64-sle15-802adf6c.tgz
   version: 3.7.2
 - cf_stacks:
   - sle15
