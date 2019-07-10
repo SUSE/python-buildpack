@@ -763,8 +763,8 @@ func writePyDistUtils(distUtils map[string][]string) error {
 
 func (s *Supplier) shouldRunPip() (bool, string, error) {
 	s.Log.BeginStep("Running Pip Install")
-	if os.Getenv("PIP_CERT") == "" {
-		os.Setenv("PIP_CERT", "/etc/ssl/certs/ca-certificates.crt")
+	if strings.HasPrefix(os.Getenv("CF_STACK"), "cflinuxfs") && os.Getenv("PIP_CERT") == "" {
+    os.Setenv("PIP_CERT", "/etc/ssl/certs/ca-certificates.crt")
 	}
 
 	requirementsPath := filepath.Join(s.Stager.BuildDir(), "requirements.txt")
