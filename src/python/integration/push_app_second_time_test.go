@@ -30,7 +30,7 @@ var _ = Describe("pushing an app a second time", func() {
 		app = nil
 	})
 
-	Regexp := `\[.*/python\-[\d\.]+\-linux\-x64\-(cflinuxfs.*-)?[\da-f]+\.tgz\]`
+	Regexp := `\[.*/python\-[\d\.]+\-linux\-x64\-(.*-)?[\da-f]+\.tgz\]`
 	DownloadRegexp := "Download " + Regexp
 	CopyRegexp := "Copy " + Regexp
 
