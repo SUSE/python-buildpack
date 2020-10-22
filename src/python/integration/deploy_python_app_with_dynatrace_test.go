@@ -21,6 +21,7 @@ var _ = Describe("CF Python Buildpack", func() {
 	)
 
 	BeforeEach(func() {
+		Skip("Skip dynatrace tests")
 		dynatraceAPI = cutlass.New(Fixtures("fake_dynatrace_api"))
 		dynatraceAPI.SetEnv("BP_DEBUG", "true")
 
