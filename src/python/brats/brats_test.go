@@ -6,6 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"golang.org/x/crypto/bcrypt"
+	"strings"
 )
 
 var _ = Describe("Python buildpack", func() {
@@ -18,6 +19,10 @@ var _ = Describe("Python buildpack", func() {
 	bratshelper.DeployAnAppWithSensitiveEnvironmentVariables(CopyBrats)
 
 	bratshelper.ForAllSupportedVersions("python", CopyBrats, func(pythonVersion string, app *cutlass.App) {
+		if strings.Contains(pythonVersion,"3.4.") {
+			Skip("Skipping test for " + pythonVersion + "which is marked for deprecation")
+		}
+
 		PushApp(app)
 
 		By("runs a simple webserver", func() {
